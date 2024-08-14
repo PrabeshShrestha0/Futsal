@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard - Futsal Booking System</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <style>
+        body {
+            background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+            font-family: 'Arial', sans-serif;
+        }
+    </style>
+</head>
+<body class="flex items-center justify-center h-screen">
+
+    <div class="bg-white p-8 rounded-lg shadow-lg w-full max-w-4xl">
+        <h1 class="text-4xl font-bold mb-6 text-center text-blue-600">Welcome to Your Dashboard</h1>
+        <p class="text-center text-gray-700 mb-8">Here you can manage your bookings, view your profile, and more.</p>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+            <div class="bg-gradient-to-r from-pink-500 to-yellow-500 p-6 rounded-lg text-white shadow-md">
+                <h2 class="text-2xl font-bold mb-4">Your Bookings</h2>
+                <p>View and manage your futsal bookings.</p>
+                <a href="#" class="mt-4 inline-block bg-white text-pink-500 py-2 px-4 rounded-lg font-semibold hover:bg-gray-100">Manage Bookings</a>
+            </div>
+
+            <div class="bg-gradient-to-r from-green-500 to-teal-500 p-6 rounded-lg text-white shadow-md">
+                <h2 class="text-2xl font-bold mb-4">Profile</h2>
+                <p>Update your profile information.</p>
+                <a href="#" class="mt-4 inline-block bg-white text-green-500 py-2 px-4 rounded-lg font-semibold hover:bg-gray-100">Edit Profile</a>
+            </div>
+
+            <div class="bg-gradient-to-r from-indigo-500 to-purple-500 p-6 rounded-lg text-white shadow-md">
+                <h2 class="text-2xl font-bold mb-4">Futsal Courts</h2>
+                <p>Explore and book available futsal courts.</p>
+                <a href="#" class="mt-4 inline-block bg-white text-indigo-500 py-2 px-4 rounded-lg font-semibold hover:bg-gray-100">Browse Courts</a>
+            </div>
+
+            <div class="bg-gradient-to-r from-red-500 to-orange-500 p-6 rounded-lg text-white shadow-md">
+                <h2 class="text-2xl font-bold mb-4">Logout</h2>
+                <p>Logout from your account.</p>
+                <a href="/logout" class="mt-4 inline-block bg-white text-red-500 py-2 px-4 rounded-lg font-semibold hover:bg-gray-100">Logout</a>
+            </div>
+        </div>
+    </div>
+<script src="server.js"></script>
+</body>
+</html>
